@@ -145,6 +145,6 @@ blockquote {font-family: "Source Sans Pro", "Arial", sans-serif; font-style: ita
       flex-direction: columns;
     }
     .Site-content {
-      flex: 3;
+      flex: 1;
     } 
   }
