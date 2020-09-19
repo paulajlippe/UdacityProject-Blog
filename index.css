@@ -1,0 +1,145 @@
+/***** PLippe Udacity Blog Project - Main *****/
+
+html {
+	font-size: 100%;
+}
+
+body {	font-family: Arial, Helvetica, sans-serif;
+		font-size: .875em;
+        line-height: 1.6em;
+    
+}
+
+/***** For Small Screens *****/
+
+@media(max-width:900px) {
+.container{
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 100px 200px 400px;
+    grid-template-areas:
+    "hd"
+    "sd" 
+    "main"
+    "ft";
+    margin: 0px 10px 5px 10px;
+  }
+}
+    .nestedGrid{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 33% 33% 33%;
+      grid-gap: 2em;
+    }
+    .nestedGrid > *{
+      border: 1px #333;
+      padding: 10px;
+    }
+
+    .container img {
+      max-height: 125px;
+      max-width: auto;
+    }
+
+    .box{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header{
+        grid-area:hd;
+        line-height: 3.2em;
+        text-align: center;
+        top: 0;
+    }
+
+    .footer{
+        grid-area: ft;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 5px;
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
+        background-color:#333;
+        color: #fff; 
+        text-align: center;
+       
+    }
+
+    .sidebar{
+        grid-area: sd;
+     }
+
+    .content{
+        grid-area: main;
+        padding: 1.5em;
+        
+    }
+    .item {
+        align-self: baseline;
+    }
+      
+    .card {
+      background-color: #CCC;
+      border: 2px solid #666;
+      padding: 2px;
+      border-radius: .25rem;
+      width: 98%;
+      min-height: 150px;
+    }
+
+    .button {
+      background-color: #ffff99;
+      border: 1px solid #333;
+      border-radius: .15rem;
+      padding: 2px;
+      width: 50%;
+      cursor: pointer;
+    }
+
+
+/***** Typography *****/
+
+.no_display {display: none;}
+
+h1, h2, h3, h4 { font-family: Arial, Helvetica, sans-serif; font-weight: normal } 
+
+h1 {font-size: 3em; padding: 20px; color: #000; font-family: cursive; font-weight: bold;}
+
+h2 {font-size: 1.5em; color: #333; font-weight: normal; text-transform: uppercase}
+
+h3 {font-size: 1.5em; color: #333; font-weight: normal;}
+
+h4 {font-size: 1.2em; font-weight: lighter}
+
+p {
+	padding: 10px 0;
+	font-size: 1em;
+}
+
+blockquote {font-family: "Source Sans Pro", "Arial", sans-serif; font-style: italic; margin: 10px 0;}
+
+a:visited {
+	color: #6633cc;
+	border-bottom: 1px solid transparent;
+}
+a:hover {
+  font-weight: bold;
+}
+
+/***** If Screen Is Wide *****/
+
+@media(min-width:900px) {
+.container{
+    display: grid;
+    grid-template-columns: 150px 200px;
+    grid-template-rows: 100px 600px 100px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    margin: 0px 10px 5px 10px;
+}
+}
