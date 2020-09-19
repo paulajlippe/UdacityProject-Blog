@@ -1,4 +1,4 @@
-/***** PLippe Udacity Blog Project - Code 2 *****/
+/***** PLippe Udacity Blog Project 2 *****/
 
 html {
 	font-size: 100%;
@@ -16,16 +16,24 @@ body {	font-family: Arial, Helvetica, sans-serif;
     display:grid;
     grid-template-columns: 600px;
     grid-template-rows: 100px 200px 500px;
+    grid-column-gap: 10px
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-areas:
     "hd"
     "sd" 
     "main"
     "ft";
-    grid-gap: 1ex;
     padding: 5px 10px 20px 10px;
   }
+ .Site {display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    }
+  .Site-content { 
+    flex: 1;
+    }
 }
+
     .nestedGrid{
       display: grid;
       grid-template-columns: 100%;
@@ -133,4 +141,11 @@ a:hover {
     "ft ft ft ft ft ft ft ft";
     padding: 10px 20px 30px 20px;
 }
+  .Site {display: flex; 
+      min-height: 100vh;
+      flex-direction: column-reverse;
+   }
+  .Site-content { 
+      flex: 3;
+    }
 }

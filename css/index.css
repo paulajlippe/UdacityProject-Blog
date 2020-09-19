@@ -1,44 +1,36 @@
-/***** PLippe Udacity Blog Project *****/
+/***** PLippe Udacity Blog Project - Main *****/
 
 html {
-	font-size: 100%;
+  font-size: 100%;
+    
 }
 
 body {	font-family: Arial, Helvetica, sans-serif;
 		font-size: .875em;
-	    line-height: 1.6em;
+        line-height: 1.6em;
+     
 }
 
 /***** For Small Screens *****/
 
 @media(max-width:900px) {
 .container{
-    display:grid;
+    display: grid;
     grid-template-columns: 600px;
-    grid-template-rows: 100px 200px 500px;
-    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: 100px 200px 400px;
     grid-template-areas:
     "hd"
     "sd" 
     "main"
     "ft";
-    grid-gap: 1ex;
-    padding: 5px 10px 20px 10px;
+    margin: 0px 10px 5px 10px;
   }
- .Site {display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    }
-  .Site-content { 
-    flex: 1;
-    }
 }
-
     .nestedGrid{
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 33% 33% 33%;
-      grid-gap: 2ex;
+      grid-gap: 2em;
     }
     .nestedGrid > *{
       border: 1px #333;
@@ -58,13 +50,23 @@ body {	font-family: Arial, Helvetica, sans-serif;
         grid-area:hd;
         line-height: 3.2em;
         text-align: center;
-        vertical-align: top;
+        top: 0;
     }
 
     .footer{
         grid-area: ft;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 5px;
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
+        background-color:#333;
+        color: #fff; 
         text-align: center;
-        margin: 4ex;
+       
     }
 
     .sidebar{
@@ -73,20 +75,20 @@ body {	font-family: Arial, Helvetica, sans-serif;
 
     .content{
         grid-area: main;
+        padding: 1.5em;
+        
+    }
+    .item {
+        align-self: baseline;
     }
       
     .card {
       background-color: #CCC;
       border: 2px solid #666;
-      padding: 5px;
+      padding: 1emx;
       border-radius: .25rem;
-      width: 90%;
-      min-height: 150px;
-    }
-
-    .content {
-      padding: 10px;
-      font-family: Arial, Helvetica, sans-serif;
+      width: 98%;
+      min-height: 125px;
     }
 
     .button {
@@ -94,10 +96,10 @@ body {	font-family: Arial, Helvetica, sans-serif;
       border: 1px solid #333;
       border-radius: .15rem;
       padding: 2px;
-      margin: 0px, 10px, 0px, 10px;
-      width: 75%;
+      width: 50%;
       cursor: pointer;
-  }
+    }
+
 
 /***** Typography *****/
 
@@ -132,20 +134,13 @@ a:hover {
 
 @media(min-width:900px) {
 .container{
-    display:grid;
-    grid-template-columns: 100px, 300px, 300px;
-    grid-template-rows: 100px 600px;
+    display: grid;
+    grid-template-columns: 150px 200px;
+    grid-template-rows: 100px 600px 100px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "sd sd main main main main main main"
     "ft ft ft ft ft ft ft ft";
-    padding: 10px 20px 30px 20px;
+    margin: 0px 10px 5px 10px;
 }
-  .Site {display: flex; 
-      min-height: 100vh;
-      flex-direction: column-reverse;
-   }
-  .Site-content { 
-      flex: 3;
-    }
 }
