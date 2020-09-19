@@ -1,23 +1,5 @@
-/* For Card */
+/* Sample for Card */
 
-.card {
-  border: 1px solid #d3d3d3;
-  border-radius: .25rem;
-}
-
-.bg-img {
-  background-size: cover;
-  min-height: 180px;
-  background-position: center;
-  background-color: #ccc;
-}
-
-.content {
-  padding: 15px;
-}
-
-
-/*try first*/
 
 .card {
     background-color: #CCCCCC;
@@ -27,15 +9,3 @@
 
 }
 
-.content {
-  padding: 15px;
-}
-
-
-.button {
-    background-color: #333333;
-    border: 1px solid #000000;
-    padding: .5rem 1rem;
-    cursor: pointer;
-    border-radius: .25rem;
-}

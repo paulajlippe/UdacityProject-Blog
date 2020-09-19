@@ -1,3 +1,4 @@
+/***** PLippe Udacity Blog Project *****/
 
 html {
 	font-size: 100%;
@@ -8,6 +9,7 @@ body {	font-family: Arial, Helvetica, sans-serif;
 	    line-height: 1.6em;
 }
 
+/***** For Small Screens *****/
 
 @media(max-width:900px) {
 .container{
@@ -20,7 +22,8 @@ body {	font-family: Arial, Helvetica, sans-serif;
     "sd" 
     "main"
     "ft";
-    padding: 5px 10px 5px 10px;
+    grid-gap: 1ex;
+    padding: 5px 10px 20px 10px;
   }
  .Site {display: flex;
     min-height: 100vh;
@@ -30,66 +33,71 @@ body {	font-family: Arial, Helvetica, sans-serif;
     flex: 1;
     }
 }
-  .nestedGrid{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 33% 33% 33%;
-    grid-gap: 2ex;
-  }
-  .nestedGrid > *{
-    border: 1px #333333;
-    padding: 10px;
-  }
-  .container img {
-    max-height: 100px;
-    max-width: auto;
-  }
-  .box{
-    font-family: Arial, Helvetica, sans-serif;
-  }
-   .header{
-      grid-area:hd;
-      line-height: 3.2em;
-      text-align: center;
-      vertical-align: top;
+
+    .nestedGrid{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 33% 33% 33%;
+      grid-gap: 2ex;
     }
+    .nestedGrid > *{
+      border: 1px #333;
+      padding: 10px;
+    }
+
+    .container img {
+      max-height: 125px;
+      max-width: auto;
+    }
+
+    .box{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header{
+        grid-area:hd;
+        line-height: 3.2em;
+        text-align: center;
+        vertical-align: top;
+    }
+
     .footer{
-      grid-area: ft;
-      text-align: center;
-      margin: 4ex;
+        grid-area: ft;
+        text-align: center;
+        margin: 4ex;
     }
+
     .sidebar{
-      grid-area: sd;
+        grid-area: sd;
+     }
+
+    .content{
+        grid-area: main;
     }
-   .content{
-      grid-area: main;
+      
+    .card {
+      background-color: #CCC;
+      border: 2px solid #666;
+      padding: 5px;
+      border-radius: .25rem;
+      width: 90%;
+      min-height: 150px;
     }
-    
-  .card {
-    background-color: #CCCCCC;
-    border: 2px solid #666666;
-    padding: 5px;
-    border-radius: .25rem;
-    width: 90%;
-    min-height: 150px;
- }
 
-  .content {
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
- }
+    .content {
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-  .button {
-    background-color: #00ccff;
-    border: 1px solid #333333;
-    border-radius: .15rem;
-    padding: 2px;
-    margin: 0px, 10px, 0px, 10px;
-    width: 75%;
-    cursor: pointer;
-    text-decoration-color: #ffffff;
- }
-
+    .button {
+      background-color: #ffff99;
+      border: 1px solid #333;
+      border-radius: .15rem;
+      padding: 2px;
+      margin: 0px, 10px, 0px, 10px;
+      width: 75%;
+      cursor: pointer;
+  }
 
 /***** Typography *****/
 
@@ -97,11 +105,11 @@ body {	font-family: Arial, Helvetica, sans-serif;
 
 h1, h2, h3, h4 { font-family: Arial, Helvetica, sans-serif; font-weight: normal } 
 
-h1 {font-size: 3em; padding: 20px; color: #000000; font-family: cursive; font-weight: bold;}
+h1 {font-size: 3em; padding: 20px; color: #000; font-family: cursive; font-weight: bold;}
 
-h2 {font-size: 1.5em; color: #333333; font-weight: normal; text-transform: uppercase}
+h2 {font-size: 1.5em; color: #333; font-weight: normal; text-transform: uppercase}
 
-h3 {font-size: 1.5em; color: #333333; font-weight: normal;}
+h3 {font-size: 1.5em; color: #333; font-weight: normal;}
 
 h4 {font-size: 1.2em; font-weight: lighter}
 
@@ -110,36 +118,34 @@ p {
 	font-size: 1em;
 }
 
-small {font-family: "Source Sans Pro", "Arial", sans-serif; color: #333333}
-
-strong {font-weight: bold; font-size: 1.2em}
-
-a {color: #000033; text-decoration: none}
-
-#container ul li {list-style:none}
-#container ol li {list-style: none}
-
 blockquote {font-family: "Source Sans Pro", "Arial", sans-serif; font-style: italic; margin: 10px 0;}
 
+a:visited {
+	color: #6633cc;
+	border-bottom: 1px solid transparent;
+}
+a:hover {
+  font-weight: bold;
+}
 
-/***** If Screen Is Wide Enough *****/
+/***** If Screen Is Wide *****/
 
-  @media(min-width:900px) {
-  .container{
-        display:grid;
-        grid-template-columns: 100px, 300px, 300px;
-        grid-template-rows: 100px 600px;
-        grid-template-areas:
-        "hd hd hd hd hd hd hd hd"
-        "sd sd main main main main main main"
-        "ft ft ft ft ft ft ft ft";
-        padding: 10px 20px 10px 20px;
-    }
-    .Site {display: flex;
+@media(min-width:900px) {
+.container{
+    display:grid;
+    grid-template-columns: 100px, 300px, 300px;
+    grid-template-rows: 100px 600px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    padding: 10px 20px 30px 20px;
+}
+  .Site {display: flex; 
       min-height: 100vh;
-      flex-direction: row;
-      }
-    .Site-content { 
-      flex: auto;
-      }
-  }
+      flex-direction: column-reverse;
+   }
+  .Site-content { 
+      flex: 3;
+    }
+}
