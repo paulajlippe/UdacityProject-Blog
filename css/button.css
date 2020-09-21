@@ -1,0 +1,11 @@
+/***** PLippe Udacity Blog Project - Button *****/
+
+.button {
+    background-color: #ffff99;
+    border: 1px solid #333;
+    border-radius: .15rem;
+    padding: 20px, 5px,;
+    margin: 20px, 5px,;
+    width: 75%;
+    cursor: pointer;
+}

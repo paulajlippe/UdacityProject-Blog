@@ -1,0 +1,10 @@
+/***** PLippe Udacity Blog Project - Card *****/
+     
+.card {
+    background-color: #CCC;
+    border: 5px, solid #666;
+    padding: 0, 1em, 1em, 0;
+    border-radius: .25rem;
+    width: 98%;
+    min-height: 125px;  
+}

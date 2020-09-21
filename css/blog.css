@@ -1,15 +1,13 @@
 /***** PLippe Udacity Blog Project - Post*****/
 
-html {
-  font-size: 100%;
-    
-}
+@import "button.css";
+@import "card.css";
+@import "typography.css";
 
-body {	font-family: Arial, Helvetica, sans-serif;
-		font-size: .875em;
-        line-height: 1.6em;
-     
-}
+html {font-size: 100%;}
+
+body {font-family: Arial, Helvetica, sans-serif; font-size: .875em; line-height: 1.6em;}
+
 
 /***** For Small Screens *****/
 
@@ -23,7 +21,7 @@ body {	font-family: Arial, Helvetica, sans-serif;
     "sd" 
     "main"
     "ft";
-    margin: 0px 10px 5px 10px;
+    margin: 10px;
   }
 }
     .nestedGrid{
@@ -41,9 +39,7 @@ body {	font-family: Arial, Helvetica, sans-serif;
       padding: 1em;
     }
 
-    .box{
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    .box {font-family: Arial, Helvetica, sans-serif;}
 
     .item {
       border: 10px #333;
@@ -54,7 +50,7 @@ body {	font-family: Arial, Helvetica, sans-serif;
         grid-area:hd;
         line-height: 3.2em;
         text-align: center;
-        top: 0;
+        padding: 2em;
     }
 
     .footer{
@@ -72,62 +68,16 @@ body {	font-family: Arial, Helvetica, sans-serif;
         text-align: center;
     }
 
-    .sidebar{
-        grid-area: sd;
-     }
+    .footer img {max-height: 50px; max-width: auto;} 
+
+    .sidebar {grid-area: sd;}
 
     .content{
         grid-area: main;
         padding: 0, 1em, 0 1em;   
     }
 
-    .card {
-      background-color: #CCC;
-      border: 2px solid #666;
-      padding: 1emx;
-      border-radius: .25rem;
-      width: 98%;
-      min-height: 125px;
-    }
-
-    .button {
-      background-color: #ffff99;
-      border: 1px solid #333;
-      border-radius: .15rem;
-      padding: 2px;
-      width: 50%;
-      cursor: pointer;
-    }
-
-
-/***** Typography *****/
-
-.no_display {display: none;}
-
-h1, h2, h3, h4 { font-family: Arial, Helvetica, sans-serif; font-weight: normal } 
-
-h1 {font-size: 3em; padding: 20px; color: #000; font-family: cursive; font-weight: bold;}
-
-h2 {font-size: 1.5em; color: #333; font-weight: normal; text-transform: uppercase}
-
-h3 {font-size: 1.5em; color: #333; font-weight: normal;}
-
-h4 {font-size: 1.2em; font-weight: lighter}
-
-p {
-	padding: 10px 0;
-	font-size: 1em;
-}
-
-blockquote {font-family: "Source Sans Pro", "Arial", sans-serif; font-style: italic; margin: 10px 0;}
-
-a:visited {
-	color: #6633cc;
-	border-bottom: 1px solid transparent;
-}
-a:hover {
-  font-weight: bold;
-}
+    #figure {float:left;}
 
 /***** If Screen Is Wide *****/
 

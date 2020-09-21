@@ -1,0 +1,24 @@
+/***** PLippe Udacity Blog Project - Directory *****/
+
+
+Personal Blog Website
+-index.html
+- pages
+     -post1.html
+     -post2.html
+     -post3.html
+
+-CSS
+    -blog.css
+    -button.css
+    -card.css
+    -index.css
+    -typography.css
+
+-photos
+    -fb.png
+    -linkedin.png
+    -profile-pic.jpeg
+    -theo1.jpeg
+    -twitter.png
+    -wasabit3.jpeg
