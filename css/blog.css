@@ -23,14 +23,16 @@ body {font-family: Arial, Helvetica, sans-serif; font-size: .875em; line-height:
     "ft";
     margin: 10px;
   }
+  img.responsive {width: 150px;}
 }
+
     .nestedGrid{
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: 100%;
       grid-gap: 2em;
       border: 10px #333;
-      padding: 10px;
+      padding: 20px;
     }
   
     .container img {
